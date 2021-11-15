@@ -1,6 +1,6 @@
 import { connectToDatabase } from "../../util/mongodb"
 
-export default async function hanlder(req, res) {
+export default async function handler(req, res) {
   const { db } = await connectToDatabase()
 
   const term = req.query.term
